@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOC<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,9 @@
             color: #2d3748;
             text-align: center;
         }
+        .barra-superior {
+            text-align: left;
+        }
         .btn-volver {
             display: inline-block;
             background-color: #4a5568;
@@ -21,12 +24,10 @@
             text-decoration: none;
             padding: 10px 16px;
             border-radius: 8px;
-            float: left;
             font-size: 0.95rem;
             font-weight: bold;
         }
         .header-titulo {
-            clear: both;
             padding-top: 20px;
         }
         .grid-examenes {
@@ -64,8 +65,9 @@
 </head>
 <body>
 
-    <!-- Enlace directo al menu principal de reproductor -->
-    <a href="reproductor.html" class="btn-volver">⬅️ Volver a Reproductor</a>
+    <div class="barra-superior">
+        <a href="reproductor.html" class="btn-volver">⬅️ Volver a Reproductor</a>
+    </div>
 
     <div class="header-titulo">
         <h1>🔬 SECCIÓN DE PRÁCTICA</h1>
@@ -73,19 +75,13 @@
     </div>
 
     <div class="grid-examenes">
-        <!-- EXAMEN 1 -->
-        <a href="examen1.html" class="card-examen">
-            🧪 Examen 1
-        </a>
+        <a href="examen1.html" class="card-examen">🧪 Examen 1</a>
+        <a href="examen2.html" class="card-examen">🧪 Examen 2</a>
+        <a href="extraordinario.html" class="card-examen card-extra">🚨 Examen Extraordinario</a>
+    </div>
 
-        <!-- EXAMEN 2 -->
-        <a href="examen2.html" class="card-examen">
-            🧪 Examen 2
-        </a>
-
-        <!-- EXAMEN EXTRAORDINARIO -->
-        <a href="extraordinario.html" class="card-examen card-extra">
-            🚨 Examen Extraordinario
+</body>
+</html>
         </a>
     </div>
 
