@@ -24,12 +24,15 @@
             float: left;
             font-size: 0.9rem;
         }
+        .header-titulo {
+            clear: both;
+            padding-top: 15px;
+        }
         .grid-examenes {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
-            margin-top: 40px;
-            clear: both;
+            margin-top: 35px;
         }
         .card-examen {
             background: white;
@@ -60,23 +63,26 @@
 </head>
 <body>
 
-    <!-- VOLVER A REPRODUCTOR -->
-    <a href="../../../reproductor.html" class="btn-volver">⬅️ Volver a Reproductor</a>
+    <!-- Botón con la ruta corregida: sube 1 nivel a reproductor.html -->
+    <a href="../reproductor.html" class="btn-volver">⬅️ Volver a Reproductor</a>
 
-    <h1 style="clear: both; padding-top: 15px;">🔬 PRÁCTICA: Selecciona tu Examen</h1>
+    <div class="header-titulo">
+        <h1>🔬 PRÁCTICA: Selecciona tu Examen</h1>
+        <p>Morfología del Sistema Reproductor</p>
+    </div>
 
     <div class="grid-examenes">
-        <!-- EXAMEN 1 -->
+        <!-- OPCIÓN 1: EXAMEN 1 -->
         <a href="examen1.html" class="card-examen">
             🧪 Examen 1
         </a>
 
-        <!-- EXAMEN 2 -->
+        <!-- OPCIÓN 2: EXAMEN 2 -->
         <a href="examen2.html" class="card-examen">
             🧪 Examen 2
         </a>
 
-        <!-- EXAMEN EXTRAORDINARIO -->
+        <!-- OPCIÓN 3: EXAMEN EXTRAORDINARIO -->
         <a href="extraordinario.html" class="card-examen card-extra">
             🚨 Examen Extraordinario
         </a>
