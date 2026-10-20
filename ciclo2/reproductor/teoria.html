@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teoría - Sistema Digestivo</title>
+    <title>Teoría - Sistema Reproductor</title>
     <script src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js"></script>
     <style>
         body {
@@ -20,6 +20,8 @@
             text-decoration: none;
             padding: 8px 14px;
             border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 20px;
         }
         .examen-card {
             background: white;
@@ -29,53 +31,48 @@
             box-shadow: 0 3px 6px rgba(0,0,0,0.05);
             border-left: 5px solid #2b6cb0;
         }
-        .examen-extra {
-            border-left-color: #e53e3e;
+        .examen-extra { border-left-color: #e53e3e; }
+        .btn-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 12px;
+            background: #2b6cb0;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
         }
     </style>
 </head>
 <body>
+    <a href="reproductor.html" class="btn-volver">⬅️ Volver a Reproductor</a>
+    <h1>📘 TEORÍA - Morfología del Sistema Reproductor</h1>
 
-    <a href="digestivo.html" class="btn-volver">⬅️ Volver a Digestivo</a>
-    <h1>📘 TEORÍA - Morfología del Sistema Digestivo</h1>
-
-    <!-- ================= EXAMEN 1 ================= -->
     <div class="examen-card">
         <h2>📝 EXAMEN 1 - TEORÍA</h2>
-
-        <h3>🎥 Vídeos, Fijas y Cuestionarios</h3>
-        <div class="quizdown">
-            ---
-            primaryColor: #2b6cb0
-            showResults: true
-            ---
-            ## 1. Enzima que inicia la digestión del almidón en la boca:
-            - [x] Amilasa salival
-            - [ ] Pepsina
-            - [ ] Lipasa pancreática
-        </div>
+        <p>Banco de preguntas del primer parcial teórico.</p>
+        <a href="teoria1.html" class="btn-link">Ver preguntas</a>
     </div>
 
-    <!-- ================= EXAMEN 2 ================= -->
     <div class="examen-card">
         <h2>📝 EXAMEN 2 - TEORÍA</h2>
-        <p>Aún no hay preguntas. Aquí agregarás las preguntas del Examen 2.</p>
+        <p>Banco de preguntas del segundo parcial teórico.</p>
+        <a href="teoria2.html" class="btn-link">Ver preguntas</a>
     </div>
 
-    <!-- ================= EXAMEN 3 ================= -->
     <div class="examen-card">
         <h2>📝 EXAMEN 3 - TEORÍA</h2>
-        <p>Aún no hay preguntas. Aquí agregarás las preguntas del Examen 3.</p>
+        <p>Banco de preguntas del tercer parcial teórico.</p>
+        <a href="teoria3.html" class="btn-link">Ver preguntas</a>
     </div>
 
-    <!-- ================= EXAMEN EXTRAORDINARIO ================= -->
     <div class="examen-card examen-extra">
         <h2>🚨 EXAMEN EXTRAORDINARIO - TEORÍA</h2>
-        <p>Aún no hay preguntas. Aquí agregarás las preguntas del Examen Extraordinario.</p>
+        <p>Banco de preguntas extras para recuperación.</p>
+        <a href="teoria-extraordinario.html" class="btn-link">Ver preguntas</a>
     </div>
 
     <script>
-        quizdown.init();
+        if (typeof quizdown !== 'undefined') quizdown.init();
     </script>
 </body>
 </html>
