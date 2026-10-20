@@ -1,2 +1,2 @@
 # mis-cuestionarios-medicina ✏️
-xd
+Proyecto para crear y gestionar cuestionarios de medicina.
