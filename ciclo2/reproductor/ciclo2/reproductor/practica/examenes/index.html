@@ -1,0 +1,82 @@
+HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exámenes de Práctica - Sistema Reproductor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f8fafc;
+            color: #2d3748;
+        }
+        .btn-volver {
+            display: inline-block;
+            background-color: #4a5568;
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        .grid-examenes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            margin-top: 25px;
+        }
+        .card-examen {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 6px solid #319795;
+            text-decoration: none;
+            color: #2d3748;
+            transition: all 0.2s ease;
+        }
+        .card-examen:hover {
+            transform: translateY(-4px);
+            border-left-color: #2b6cb0;
+            background-color: #f0fdf4;
+        }
+        .card-extra {
+            border-left-color: #e53e3e;
+        }
+        .card-examen h3 { margin: 0 0 8px 0; color: #1a202c; }
+        .card-examen p { margin: 0; font-size: 0.85rem; color: #718096; }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-volver">⬅️ Volver a Práctica</a>
+    <h1>📋 Evaluaciones y Exámenes Prácticos</h1>
+    <p>Selecciona el examen que deseas resolver:</p>
+
+    <div class="grid-examenes">
+        <!-- EXAMEN 1 -->
+        <a href="examen1/index.html" class="card-examen">
+            <h3>🧪 Examen 1</h3>
+            <p>Guía, Investigaciones, Fijas e Identificación de Imágenes</p>
+        </a>
+
+        <!-- EXAMEN 2 -->
+        <a href="examen2/index.html" class="card-examen">
+            <h3>🧪 Examen 2</h3>
+            <p>Guía, Investigaciones, Fijas e Identificación de Imágenes</p>
+        </a>
+
+        <!-- EXTRAORDINARIO / SUSTITUTORIO -->
+        <a href="extraordinario/index.html" class="card-examen card-extra">
+            <h3>🚨 Examen Extraordinario</h3>
+            <p>Banco integral de repaso práctico</p>
+        </a>
+    </div>
+
+</body>
+</html>
